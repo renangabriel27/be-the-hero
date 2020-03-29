@@ -51,12 +51,12 @@ export default function Incidents() {
       <View style={styles.header}>
         <Image source={logoImg}  />
         <Text style={styles.headerText}>
-          Total de <Text style={styles.headerTextBold}>{total} casos</Text>.
+          Total: <Text style={styles.headerTextBold}>{total} incidents</Text>
         </Text>
       </View>
 
-      <Text style={styles.title}>Bem-vindo!</Text>
-      <Text style={styles.description}>Escolha um dos casos abaixo e salve o dia.</Text>
+      <Text style={styles.title}>Welcome!</Text>
+      <Text style={styles.description}>Choose one incident and save the day.</Text>
 
       <FlatList
         data={incidents}
@@ -67,24 +67,24 @@ export default function Incidents() {
         onEndReachedThreshold={0.2}
         renderItem={({ item: incident }) => (
           <View style={styles.incident}>
-            <Text style={styles.incidentProperty}>ONG:</Text>
+            <Text style={styles.incidentProperty}>NGO:</Text>
             <Text style={styles.incidentValue}>{incident.name}</Text>
 
-            <Text style={styles.incidentProperty}>CASO:</Text>
+            <Text style={styles.incidentProperty}>CAUSE:</Text>
             <Text style={styles.incidentValue}>{incident.title}</Text>
 
-            <Text style={styles.incidentProperty}>VALOR:</Text>
+            <Text style={styles.incidentProperty}>VALUE:</Text>
             <Text style={styles.incidentValue}>
-              {Intl.NumberFormat('pt-BR', {
+              {Intl.NumberFormat('en-US', {
                 style: 'currency',
-                currency: 'BRL' }).format(incident.value)}
+                currency: 'USD' }).format(incident.value)}
             </Text>
 
             <TouchableOpacity
               style={styles.detailsButton}
               onPress={() => navigateToDetail(incident)}
             >
-              <Text style={styles.detailsButtonText}>Ver mais detalhes</Text>
+              <Text style={styles.detailsButtonText}>See more details</Text>
               <Feather name="arrow-right" size={16} color="#E02041" />
             </TouchableOpacity>
           </View>
