@@ -1,6 +1,6 @@
 # Be The Hero
 
-App to help the Non-Governmental Organization (NGO's) with your causes. Created on the OmniStack Week for learning NodeJS, React JS and React Native.
+App to help the Non-Governmental Organization (NGO's) with your causes. Created during the OmniStack Week for learning NodeJS, React JS and React Native.
 
 ![Be The Hero](https://raw.githubusercontent.com/renangabriel27/be-the-hero/master/.assets/be-the-hero.png)
 
