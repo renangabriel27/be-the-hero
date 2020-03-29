@@ -2,6 +2,8 @@
 
 App to help the Non-Governmental Organization (NGO's) with your incidents. Created on the OmniStack Week for learning NodeJS, React JS and React Native.
 
+![alt text](https://raw.githubusercontent.com/renangabriel27/be-the-hero/master/.images/be-the-hero.png "Be The Hero")
+
 # What I Learned
 
 * Build a simple REST API with NodeJS and Express
