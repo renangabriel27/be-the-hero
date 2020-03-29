@@ -47,7 +47,7 @@ export default function Logon() {
           <Link className="back-link" to="/register">
             <FiLogIn size={16} color="#E02041" />
               <span className="small-text">Don't have account?</span>
-              Register Account
+              <small>Register Account</small>
             </Link>
         </form>
       </section>
