@@ -24,7 +24,7 @@ export default function Logon() {
 
       history.push('/profile');
     } catch (err) {
-      alert('Falha no login, tente novamente.')
+      alert('Please try again, something went wrong');
     }
   }
 
@@ -34,19 +34,20 @@ export default function Logon() {
         <img src={logoImg} alt="Be The Hero" />
 
         <form onSubmit={handleLogin}>
-          <h1>Faça seu logon</h1>
+          <h1>Sign In</h1>
 
           <input
-            placeholder="Sua ID"
+            placeholder="ID"
             value={id}
             onChange={e => setId(e.target.value)}
           />
 
-          <button className="button" type="submit">Entrar</button>
+          <button className="button" type="submit">Login</button>
 
           <Link className="back-link" to="/register">
             <FiLogIn size={16} color="#E02041" />
-              Não tenho cadastro
+              <span className="small-text">Don't have account?</span>
+              Register Account
             </Link>
         </form>
       </section>
